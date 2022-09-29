@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        h1{/* tipo box-level*/
+            background-color: lightgrey;
+            height: 300px; /* altura do box */
+            width: 300px; /* largura do box */
+
+            /* border: 10px solid darkslategrey ; essa forma de borda simplificada sempre nessa ordem: altura, tipo e cor */
+            border-width: 10px; /* largura da borda */
+            border-style: solid;
+            border-color: darkslategray;
+
+            /* padding: 10px 10px 10px 10px ; essa e forma do padding simplificada sempre nessa ordem: alto,direira,baixo e esqueda */
+            padding-top: 10px; /* altura do padding */
+            padding-right: 10px; /* direita do padding */
+            padding-bottom: 10px;/* parte de baixo do padding */
+            padding-left: 10px;/* esqueda do padding */
+
+            /* margin: 20px auto 40px auto; dessa forma centraliza no valor determinado */
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;    
+            margin-left: 20px;
+
+           /* outline: 5px dashed salmon;*/
+            outline-width: 5px; /*uma linha entre a borda e a magem*/
+            outline-style: dashed; /* forma da linha */
+            outline-color: salmon; /* cor da linha */
+        }
+        a{/* tipo inlane-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            
+        }
+        /* também posso altera as caraquiteristicas do box com: 
+
+            display: block ;
+            display: inline;
+
+        */
+    
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+    <p>Parágafos também são exemplos de box-level mas os <a href="#">lins são exemplos de caixas inlane-level</a>. vamos ver como tudomissi funciona. </p>
+</body>
+
+</html>

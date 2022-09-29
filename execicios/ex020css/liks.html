@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+ 
+    <style>
+           /* SELETORES PESONALIZADOS
+
+           # = id; uma intedificação como classe
+           . = classe
+           : = pseudo classe
+           ::= pseudo elemento
+           > = clildren (filho)    
+           */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(243, 6, 6);
+            text-decoration: none; /* esse comando retira o subrinhado dos liks */
+            font-weight: bold;/* esse comando deixa as fontes em negrito */
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover {
+            text-decoration: underline; /*nesse comando quando passar o mause no lik ele fica sobrinhado*/
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: rgb(216, 120, 120);
+            
+        }
+       .especial::before{ /* antes do elemennto */
+
+            content: '☞ ';
+            color: darkgray;
+
+        }
+        .especial::after{/*depois do elemento*/
+
+            content: ' ☜';/* escreve o comando apos o intem selecionado nesse casso os liks */
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Liks</h1>
+    <ul>
+        <li><a href="https://www.meutimao.com.br/" target="_blank" class="especial">Meu timão</a></li>
+        <li><a href="https://ge.globo.com/futebol/times/corinthians/"target="_blank">GE Corinthians</a></li>
+        <li><a href="https://www.lance.com.br/corinthians"target="_blank">Lancenet Corinthians</a> </li>
+    </ul>
+</body>
+</html>
